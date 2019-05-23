@@ -55,7 +55,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		pwgen \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV GPG_KEYS 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2
+ENV GPG_KEYS 4D1BB29D63D98E422B2113B19334A25F8507EFA5
 # pub   1024D/CD2EFD2A 2009-12-15
 #       Key fingerprint = 430B DF5C 56E7 C94E 848E  E60C 1C4C BDCD CD2E FD2A
 # uid                  Percona MySQL Development Team <mysql-dev@percona.com>
