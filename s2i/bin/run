@@ -92,4 +92,4 @@ fi
                 echo
                 #mv /etc/my.cnf $DATADIR
         fi
-exec mysqld --user=mysql --log-error=${DATADIR}error.log $CMDARG
+exec mysqld_safe --user=mysql --log-error=${DATADIR}error.log $CMDARG
