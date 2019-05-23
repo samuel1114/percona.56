@@ -181,5 +181,5 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 fi
 
 exec "$@"
-exec "mysqld_safe"
+exec "run_mysqld"
 
