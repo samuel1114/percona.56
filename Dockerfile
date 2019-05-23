@@ -97,7 +97,7 @@ RUN set -ex; \
 	} | debconf-set-selections; \
 	apt-get update; \
 	apt-get install -y \
-		percona-server-server-$PERCONA_MAJOR=$PERCONA_VERSION \
+		percona-server-server-$PERCONA_MAJOR \
 	; \
 	rm -rf /var/lib/apt/lists/*; \
 # comment out any "user" entires in the MySQL config ("docker-entrypoint.sh" or "--user" will handle user switching)
