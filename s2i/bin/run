@@ -189,3 +189,4 @@ for f in /var/lib/mysql/*; do
     esac
     echo
 done
+echo 'endend'
