@@ -181,5 +181,11 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 fi
 
 exec "$@"
-exec mysqld_safe "$@" 2>&1
-
+exec mysqld_safe
+for f in /var/lib/mysql/*; do
+    case "$f" in
+	    *.err)     cat $f ;;
+	    *)         cat $f ;;
+    esac
+    echo
+done
